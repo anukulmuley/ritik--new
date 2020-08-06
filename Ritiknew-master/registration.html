@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="registration.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success" id="main-navbar">
+ <!--  <a class="navbar-brand" href="#" id="willow"><i class="fas fa-tractor"></i><b> Willow-Way</b></a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+
+  <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" id="profile">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item" id="contact">
+        <a class="nav-link" href="#">  About Us</a>
+      </li>
+    
+      
+
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active" id="profile">
+        <a class="nav-link" href="#"><i class="fas fa-user-circle"></i> Profile</a>
+      </li>
+      <li class="nav-item" id="contact">
+        <a class="nav-link" href="#"><i class="fas fa-address-book"></i> Contact</a>
+      </li>
+
+      
+
+      </li>
+    </ul>
+
+    
+
+    
+  </div>
+</nav>
+
+<div class="container">
+	<div class="card border-success mb-3" style="max-width: 48rem;" id="card">
+   <div class="card-header text-center"><h3> Welcome to Jan Kisan Connect</h3></div> 
+
+  <div class="card-body text-success">
+    <h5 class="card-title"><div class="container">
+	<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><i class="fas fa-hand-point-right"></i><b> First Name</b></label>
+    <input type="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="first name">
+  </div>
+ 
+  <div class="form-group">
+    <label for="exampleInputEmail1"><i class="fas fa-hand-point-right"></i><b> Last Name</b></label>
+    <input type="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="last name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><i class="fas fa-hand-point-right"></i><b> Username (Can be email)</b></label>
+    <input type="username" class="form-control" id="lastname" placeholder="username">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1"><i class="fas fa-hand-point-right"></i><b> Password</b></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><i class="fas fa-hand-point-right"></i><b> Phone Number</b></label>
+    <input type="number" class="form-control" id="number" placeholder="phone number">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1"><i class="fas fa-hand-point-right"></i><b> Select Gender</b></label>
+     <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Male
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+Female  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3">
+  <label class="form-check-label" for="exampleRadios2">
+Others  </label>
+</div>
+  </div>
+<!--    <div class="form-group">
+<label for="exampleInputEmail1"><i class="fas fa-hand-point-right"></i><b> Region</b></label>    <select class="form-control" id="transporation">
+      <option>Lohegoan</option>
+      <option>beawar</option>
+      <option>Pune Airport</option>
+      <option>Nikol</option>
+      <option>Viman Nagar</option>
+      <option>yerwada</option>
+
+     
+    </select> -->
+  <div class="form-group">
+    <label for="exampleInputEmail1"><i class="fas fa-hand-point-right"></i><b> Address</b></label>
+    <input type="text" class="form-control" id="address" placeholder="address">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1"><i class="fas fa-hand-point-right"></i><b>Pincode</b></label>
+    <input type="text" class="form-control" id="Pincode" placeholder="Enter six digit pincode  eg.411015" pattern="[0-9]{6}">
+  </div>
+  
+
+
+
+  <a href="Farmer.html" class="btn btn-primary">Submit</a>
+ 
+    <button type="reset" class="btn btn-primary" id="reset">Reset</button>
+
+</form>
+
+</div>
+</h5>
+  </div></h5>
+  </div>
+</div>
+	
+
+
+<script type="text/javascript" src="registration.js"></script>
+</body>
+</html>
+

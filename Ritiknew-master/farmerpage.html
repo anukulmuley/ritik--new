@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>farmerpage</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" type="text/css" href="farmerpage.css">
+  
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-success" id="main-navbar">
+ <!--  <a class="navbar-brand" href="#" id="willow"><i class="fas fa-tractor"></i><b> Willow-Way</b></a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+
+  <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" id="profile">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item" id="contact">
+        <a class="nav-link" href="#">  About Us</a>
+      </li>
+     
+      
+
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active" id="profile">
+        <a class="nav-link" href="#"><i class="fas fa-user-circle"></i> Profile</a>
+      </li>
+      <li class="nav-item" id="contact">
+        <a class="nav-link" href="#"><i class="fas fa-address-book"></i> Contact</a>
+      </li>
+
+      
+
+      </li>
+    </ul>
+
+    
+
+    
+  </div>
+</nav>
+
+ <div class="card border-success mb-3" style="max-width: 48rem;" id="card">
+  <div class="card-header">Farmer Information</div>
+  <div class="card-body text-success">
+    <h5 class="card-title"><form>
+ 
+  <div class="form-group">
+<label for="exampleInputEmail1"> Region</label>    <select class="form-control mb-3" id="transporation" aria-describedby="emailHelp">
+      <option>Junnar Taluka</option>
+      <option>Ambegoan Taluka</option>
+      <option>Khed Taluka</option>
+      <option>Maval Taluka</option>
+      <option>Mulshi Taluka</option>
+      <option>Velhe Taluka</option>
+      <option>Bhor Taluka</option>
+      <option>Haveli Taluka</option>
+      <option>Purandar Taluka</option>
+      <option>Pimpri Chinchwad Taluka</option>
+      <option>Pune CityTaluka</option>
+      <option>Indapur Taluka</option>
+      <option>Daund Taluka</option>
+      <option>Baramati Taluka</option>
+      <option>Shirur Taluka</option>
+     
+    </select>
+
+  <!-- <div class="form-group">
+    <label for="cropname">Crop Name</label> -->
+
+
+  <div class="form-group">
+<label for="exampleInputEmail1"> Crop Name</label>    <select class="form-control mb-3" id="transporation" aria-describedby="emailHelp">
+      <option>Wheat </option>
+      <option>Rice</option>
+      <option>Jowar</option>
+      <option>Bajri</option>
+      <option>Chana Dal</option>
+      <option>Tomato</option>
+      <option>Potato</option>
+    
+     
+    </select>  
+   <!--  <input type="text" class="form-control" id="cropname" aria-describedby="emailHelp">
+  </div> -->
+  <div class="form-group">
+    <label for="exampleInputPassword1">Current Price</label>
+    <input type="number" class="form-control" id="price" readonly placeholder="34">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">My available Stock (in Kg)</label>
+    <input type="number" class="form-control" id="price" placeholder="Enter number only">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Max amount Eligible for</label>
+    <input type="number" class="form-control" id="price" readonly placeholder="Current Price*My available Stock" >
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Transportation</label>
+    <select class="form-control" id="transporation">
+      <option>yes</option>
+      <option>no</option>
+     
+    </select>
+  </div>
+  <button class="btn btn-success" type="button" onclick="myFunction()">Submit</button>
+  <button type="submit" class="btn btn-primary">Clear</button>
+</form></h5>
+  </div>
+</div>
+
+<script type>
+  function myFunction(){
+      swal("Successfull", "Thanks for filling data", "success");
+  }
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
